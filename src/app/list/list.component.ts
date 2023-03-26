@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ListaAlumnos } from '../interface/listaAlumnos';
 
 @Component({
   selector: 'app-list',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent {
-  listaAlumnos = [
+  listaAlumnos: ListaAlumnos[] = [
     {
       Nombre: 'Juan',
       Aprobado: true 
