@@ -1,0 +1,6 @@
+LISTA FINAL DE ALUMNOS CON SU ESTADO :
+<div *ngFor='let alumno of listaAlumnos'>
+  <div class='container' [ngClass]="alumno.Aprobado ? 'aprobado' : 'reprobado'">
+    {{alumno.Nombre}} está {{alumno.Aprobado ? "APROBADO" : "REPROBADO"}}
+  </div>
+</div>
